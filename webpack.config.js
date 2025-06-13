@@ -38,6 +38,11 @@ module.exports = {
                 type: 'asset/source' // webpack emits the asset as a string in the bundle
                 this is useful for text files like JSON or CSV, but not for binary files like images
             */
-        }]
+        },
+        {
+            test: /\.txt$/,
+            type: 'asset/source' // webpack emits the asset as a string in the bundle
+        }
+    ]
     }
 }
